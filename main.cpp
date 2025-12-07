@@ -1,3 +1,8 @@
+// Patrick Donaghy
+// CSCI-271
+// 12/6/2025
+// Program Name: Inheritance Bookstore Inventory
+
 #include <iostream>
 #include <vector>
 #include "PrintedMedia.h"
