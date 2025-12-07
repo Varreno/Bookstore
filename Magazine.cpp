@@ -1,19 +1,19 @@
 #include "Magazine.h"
 #include <iostream>
-using namespace std;
+
 
 // TODO: Implement the Constructor
 // Hint: Remember to call the PrintedMedia constructor using : PrintedMedia(t, p)
-Magazine::Magazine(string title, double price, string month, int issueNum) : PrintedMedia(title, price), month(month), issueNum(issueNum) {}
+Magazine::Magazine(std::string title, double price, std::string month, int issueNum) : PrintedMedia(title, price), month(month), issueNum(issueNum) {}
 
 
 // TODO: Implement printDetails()
 // Hint: Mimic the output style of the Book class
 void Magazine::printDetails() {
-    cout << "Type: MAGAZINE" << endl;
-    cout << "Magazine TItle: " << title << endl;
-    cout << "Price: $" << price << endl;
-    cout << "Month: " << month << endl;
-    cout << "Issue Number: " << issueNum << endl;
-    std::cout << "-----------------------------" << std::endl;
+    std::cout << "Type: MAGAZINE" << std::endl;
+    std::cout << "Magazine TItle: " << title << std::endl;
+    std::cout << "Price: $" << price << std::endl;
+    std::cout << "Month: " << month << std::endl;
+    std::cout << "Issue Number: " << issueNum << std::endl;
+    std::cout << "-----------------------------" << std::endl; //I took some inspiration from the way you designed the separators.
 }
